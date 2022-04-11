@@ -31,4 +31,4 @@ st.dataframe(df)
 identities = df['Identity'].drop_duplicates()
 identity_choice = st.sidebar.selectbox('Select your identity:', identites)
 device = df["Device"].loc[df["Identity"] = identity_choice]
-year_choice = st.sidebar.selectbox('', Device) 
+year_choice = st.sidebar.selectbox('', device) 

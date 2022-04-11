@@ -28,7 +28,8 @@ df = pd.read_excel("map.xlsx")
 st.dataframe(df)
 
 
-identities = df['Identity '].drop_duplicates()
+identities = df['Identity ']
+# .drop_duplicates()
 identity_choice = st.sidebar.selectbox('Select your identity:', identities)
 # device = df["Device"].loc[df["Identity "] == identity_choice]
 # year_choice = st.sidebar.selectbox('', device) 
